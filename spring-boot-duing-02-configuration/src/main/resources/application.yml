@@ -1,0 +1,44 @@
+#server:
+#  port: 8090
+#
+#food:
+#  rice: 烤肉
+#  meat: 拌饭
+#  sauce:
+#    - 咖喱
+#    - 原味
+spring:
+  profiles:
+    active: prod
+
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8090
+
+
+
+---
+  spring:
+    profiles: prod
+
+  server:
+    port: 8091
+
+  food:
+    rice: 烤肉
+    meat: 拌饭
+    sauce:
+      - 咖喱
+      - 原味
+      - 麻辣
+
+  jasypt:
+    encryptor:
+      password: wd
+  info:
+    username: ENC(oq2KFHuGkbtCxfZZ334Orw==)
+    password: ENC(J7KEjMioeO/a935TzmgVAg==)
