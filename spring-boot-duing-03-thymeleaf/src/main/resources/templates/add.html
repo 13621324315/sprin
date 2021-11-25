@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>add</title>
+</head>
+<body>
+
+<form th:action="@{/guest/add}"  method="post">
+    姓名：<input type="text" name="name">
+    角色：<input type="text" name="role">
+    <input type="submit" >
+</form>
+
+</body>
+</html>
